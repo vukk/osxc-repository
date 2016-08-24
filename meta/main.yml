@@ -9,11 +9,10 @@ galaxy_info:
   platforms:
   - name: MacOSX
     versions:
-    - 10.9
-    - 10.10
+    - all
   categories:
   - development
   - packaging
   - system
 dependencies:
-- osxc.common-env
+- Meuk.osxc-common-env
