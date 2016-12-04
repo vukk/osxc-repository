@@ -1,9 +1,10 @@
-repository
-==========
+osxc-repository
+===============
+
+This is a fork of osxc.repository, where the env-support has been removed.
+Setting envs should be done in your dotfiles, which should be managed separately.
 
 Checkout a git repository and compile it or link it
-
-[![Build Status](https://travis-ci.org/osxc/repository.svg)](https://travis-ci.org/osxc/repository/)
 
 ## Requirements
 
@@ -20,7 +21,6 @@ Checkout a git repository and compile it or link it
 | `dest`                | Destination path (locally)                       | none, required     |
 | `version`             | The version to checkout                          | `HEAD`             |
 | `links`               | Array of dicts to create symbolic links: `{src: "relative/to/the/root/of/the/git/repo", dest: "/relative/to/root or ~/your/home"}` | `[]` |
-| `env`                 | Array of dicts to inject env: `{regex: "^export VAR_NAME", line: "export VAR_NAME='value'"}` | `[]` |
 | `build`               | Do you want to build this repo ?                 | `false`            |
 | `configure_cmd`       | The build configuration command                  | `./configure`      |
 | `build_cmd`           | The build command                                | `make`             |
@@ -28,7 +28,7 @@ Checkout a git repository and compile it or link it
 
 ## Dependencies
 
-- osxc.common_env
+None
 
 ## License
 
@@ -37,4 +37,3 @@ MIT
 ## Author
 
 - Robin Ricard
-
