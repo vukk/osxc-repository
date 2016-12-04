@@ -14,5 +14,3 @@ galaxy_info:
   - development
   - packaging
   - system
-dependencies:
-- Meuk.osxc-common-env
